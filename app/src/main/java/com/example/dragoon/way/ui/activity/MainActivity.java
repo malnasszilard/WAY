@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
             return password;
         }
 
-        public void setUsername(String password) {
+        public void setPassword(String password) {
             this.password = password;
         }
     }
@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity
             return description;
         }
 
-        public void setUsername(String description) {
+        public void setDescription(String description) {
             this.description = description;
         }
     }
@@ -154,11 +154,11 @@ public class MainActivity extends AppCompatActivity
                         json.put("email", rawemail);
                         json.put("megjegyzes", rawdescription);
                         SingletonSession.Instance().setUsername(name.getText().toString());
-                        SingletonSession1.Instance1().setUsername(email.getText().toString());
-                        SingletonSession2.Instance2().setUsername(description.getText().toString());
+                        SingletonSession1.Instance1().setPassword(email.getText().toString());
+                        SingletonSession2.Instance2().setDescription(description.getText().toString());
                         kiir.setText(SingletonSession.instance.username);
-
-
+                        kiir.setText(SingletonSession1.instance1.password);
+                        kiir.setText(SingletonSession2.instance2.description);
 
                     } catch (JSONException e) {
                         e.printStackTrace();
