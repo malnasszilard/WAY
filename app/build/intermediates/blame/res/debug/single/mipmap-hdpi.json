@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\Amoba\\amoba\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\Amoba\\amoba\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\Amoba\\amoba\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\Amoba\\amoba\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher_round.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\dragoon\\AndroidStudioProjects\\WAY\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    }
+]
