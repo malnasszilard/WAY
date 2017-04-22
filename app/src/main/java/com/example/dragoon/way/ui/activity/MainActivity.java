@@ -37,11 +37,13 @@ public class MainActivity extends AppCompatActivity
     Button save;
     EditText name, email, description;
     TextView kiir;
-
     public static class SingletonSession {
 
         private static SingletonSession instance;
         private String username;
+        private String password;
+        private String description;
+
         //no outer class can initialize this class's object
         private SingletonSession() {}
 
@@ -59,21 +61,38 @@ public class MainActivity extends AppCompatActivity
         public String getUsername() {
             return username;
         }
+        public String getPassword() {
+            return password;
+        }
+        public String getDescription() {
+            return description;
+        }
 
         public void setUsername(String username) {
             this.username = username;
         }
+        public void setPassword(String password) {
+            this.username = password;
+        }
+        public void setDescription(String description) { this.username = description;
+        }
     }
 
 
+/*
     public static class SingletonSession1 {
 
+
+
+        public String getPassword() {
+            return password;
+        }
         private static SingletonSession1 instance1;
-        private String password;
+
         //no outer class can initialize this class's object
         private SingletonSession1() {}
 
-        public static SingletonSession1 Instance1()
+       public static SingletonSession1 Instance1()
         {
             //if no instance is initialized yet then create new instance
             //else return stored instance
@@ -83,11 +102,6 @@ public class MainActivity extends AppCompatActivity
             }
             return instance1;
         }
-
-        public String getPassword() {
-            return password;
-        }
-
         public void setPassword(String password) {
             this.password = password;
         }
@@ -96,7 +110,7 @@ public class MainActivity extends AppCompatActivity
     public static class SingletonSession2 {
 
         private static SingletonSession2 instance2;
-        private String description;
+
         //no outer class can initialize this class's object
         private SingletonSession2() {}
 
@@ -118,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         public void setDescription(String description) {
             this.description = description;
         }
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -154,12 +168,9 @@ public class MainActivity extends AppCompatActivity
                         json.put("email", rawemail);
                         json.put("megjegyzes", rawdescription);
                         SingletonSession.Instance().setUsername(name.getText().toString());
-                        SingletonSession1.Instance1().setPassword(email.getText().toString());
-                        SingletonSession2.Instance2().setDescription(description.getText().toString());
-                        kiir.setText(SingletonSession.instance.username);
-                        kiir.setText(SingletonSession1.instance1.password);
-                        kiir.setText(SingletonSession2.instance2.description);
-
+                        SingletonSession.Instance().setPassword(email.getText().toString());
+                        SingletonSession.Instance().setDescription(description.getText().toString());
+                        kiir.setText(SingletonSession.instance.password);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
