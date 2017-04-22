@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity
 
         private static SingletonSession instance;
         private String username;
-        private String password;
+        private String email;
         private String description;
 
         //no outer class can initialize this class's object
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
             return username;
         }
         public String getPassword() {
-            return password;
+            return email;
         }
         public String getDescription() {
             return description;
@@ -71,10 +71,10 @@ public class MainActivity extends AppCompatActivity
         public void setUsername(String username) {
             this.username = username;
         }
-        public void setPassword(String password) {
-            this.username = password;
+        public void setPassword(String email) {
+            this.email = email;
         }
-        public void setDescription(String description) { this.username = description;
+        public void setDescription(String description) { this.description = description;
         }
     }
 
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity
                         SingletonSession.Instance().setUsername(name.getText().toString());
                         SingletonSession.Instance().setPassword(email.getText().toString());
                         SingletonSession.Instance().setDescription(description.getText().toString());
-                        kiir.setText(SingletonSession.instance.password);
+                        kiir.setText(SingletonSession.instance.email);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
